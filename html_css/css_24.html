@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<style>
+ #box_wrap{
+  width:580px; height:380px; border:1px solid blue;
+  margin-left:auto; margin-right:auto;
+  margin-top:120px; text-align:center;
+  box-shadow:20px 10px 5px gray; /*box-shadow속성은 css3에서 추가된 것으로 그림자 효과를 준다.
+  가로,세로,번지는 정도,그림자 색 순서로 설정 */
+  border-radius:25px;
+  
+  /*문제) h2타입선택자를 활용해서 글자를 중앙 정렬 시키고, box_title 클래스 선택자를 활용해서 해당 글자를
+  		 수직 중앙 배치를 해보자. */
+ }
+ h2{
+  text-align:center;
+ }
+ .box_title{
+  line-height:350px;
+ }
+</style>
+</head>
+<body>
+<h2>box-shadow으로 그림자 효과</h2>
+<div id="box_wrap">
+	<span class="box_title">css3에서 추가된 속성인 box-shadow는 그림자 효과를 준다.</span>
+</div>
+</body>
+</html>

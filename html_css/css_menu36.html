@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<style>
+ ul{
+  list-style:none; /*목록앞 점 없앰 */
+  text-align:center; /*수평 중앙 정렬 */
+  border-top:1px solid red; /* 윗줄 선 두께를 1픽셀,실선 solid,선색을 빨강 */
+  border-bottom:1px solid red; /* 밑줄 선 */
+  padding:10px 0px; /*상하 안여백은 10픽셀로 처리, 좌우 안여백은 0픽셀*/
+ }
+ ul li{
+  display:inline; /* ul li태그는 가로줄 전체를 차지하는 블록수준 요소 태그이다. 이것을 내용물 크기만큼만
+  차지하는 인라인 요소태그로 변경한다.그러므로 수직정렬이 수평정렬로 변경*/
+  text-transform: uppercase; /*영문 대문자로 변경 */
+  padding:0px 20px; letter-spacing:10px; /*글자간 간격*/
+ }
+ ul li a{
+  text-decoration: none; /*ul li의 하이퍼링크 된곳 밑줄 선 사람짐*/
+ }
+ ul li a:hover{
+  text-decoration: underline; /* ul li의 하이퍼링크 된곳 마우스 오버시 밑줄 선 나오게 함*/
+ }
+</style>
+</head>
+<body>
+<h1>웹표준 접근성에서 ul li태그는 메뉴구성할 때 사용</h1>
+ <ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">BLog</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contact</a></li>
+ </ul>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<style>
+ .menubar li{
+  display:inline; /* 블록수준 요소태그를 인라인 요소 태그로 변경해서 수직정렬을 수평정렬로 배치*/
+  background-color:yellow;
+  border:1px solid red;
+  padding:.5em; /*상하좌우 안여백을 지정*/
+  margin:-3px; /*상하좌우 바깥여백을 지정*/
+ 
+  /*문제) 테두리를 둥글게, 하이퍼링크가 걸리면 기본으로 밑줄선이 나온다. 이 밑줄선을 제거하고 마우스 오버했을 경우
+  		  만 밑줄선이 나오게 하자. */
+  
+  border-radius: 20px; /*테두리를 둥글게*/
+ }
+ ul li a{ /* a:link {text-decoration: none;} 으로도 할수 있음*/
+  text-decoration: none; /*ul li의 하이퍼링크 된곳 밑줄 선 사람짐*/
+ }
+ ul li a:hover{ /* a:hover{text-decoration: underline;} 으로도 할수 있음*/
+  text-decoration: underline; /* ul li의 하이퍼링크 된곳 마우스 오버시 밑줄 선 나오게 함*/
+ }
+</style>
+</head>
+<body>
+ <ul class="menubar">
+  <li><a href="#">홈으로</a></li>
+  <li><a href="#">회사 소개</a></li>
+  <li><a href="#">제품 소개</a></li>
+  <li><a href="#">질문과 대답</a></li>
+  <li><a href="#">연락처</a></li>
+ </ul>
+ <!-- ul li는 웹표준 ui에서 메뉴구성할 때 사용한다. 가로줄 전체를 차지하는 블록수준 요소태그이다. -->
+</body>
+</html>

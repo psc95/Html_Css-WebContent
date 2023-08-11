@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<style>
+ body{
+  background:#efe5d0;
+  font-family: Arial, "Trebuchet MS", sans-serif;
+  margin:0px;
+ }
+ header{
+  background-color:#e3afed;
+  color:#000000; margin:0px; text-align:center;
+  padding:5px;
+ }
+ h1{
+  margin:0px;
+ }
+ section#main{
+  display:table-cell; /*테이블을 셀처럼 배치*/
+  background-color:yellow; padding:15px;
+ }
+ nav{
+  display: table-cell;
+  background:#ffd800; padding:15px;
+ }
+ footer{
+  background-color:#954b4b; color:#EFE5D0;
+  text-align: center; padding:10px;
+  margin:0px; font-size:90%;
+ }
+</style>
+</head>
+<body>
+ <header><!-- header는 html5에서 추가된 태그로 상단영역을 지정할 때 사용 -->
+  <h1>My Blog Page</h1>
+ </header>
+ 
+ <nav><!-- nav도 html5에서 추가된 태그로 메뉴구성할 때 사용한다. -->
+  <h1>Links</h1>
+  <ul>
+   <li><a href="http://www.googole.co.kr">구글</a></li>
+   <li><a href="http://www.naver.com">네이버</a></li>
+   <li><a href="http://www.daum.net">다음</a></li>
+  </ul>
+  
+  <figure><!-- figure도 html5에서 추가된 태그로 그림등을 삽입할 때 사용한다. -->
+   <img src="../images/hong.jpeg" width="85" height="85" alt="홍길동">
+   <figcaption>홍길동</figcaption><!-- figcaption도 html5에서 추가된 태그로 그림에 대한 부연설명 -->
+  </figure>
+ </nav>
+ 
+ <section id="main">
+  <article>
+   <h1>Semantic Tags</h1>
+   <p>
+    시멘티 요소(Semantic elements)는 브라우저에게 요소의 의미나 목적을 명확하게 알려주는 요소이다.
+   </p>
+  </article>
+  <article>
+    <h1>div와span</h1>
+    <p>
+     div는 "divide"의 약자로서 페이지를 논리적인 섹션으로 분리하는데 사용하는 태그이다. span은
+     인라인 요소로서 텍스트를 위한 컨테이너로 사용할 수 있다.
+    </p>
+  </article>
+ </section>
+ 
+ <footer><!-- footer도 hteml5에서 추가된 태그로 하단영역을 지정할 때 사용한다. -->
+  CopyRight (c) 2023 Year Hong
+ </footer>
+</body>
+</html>
