@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+</head>
+<body>
+<script>
+ document.write("<h1>이중 for반복문 실습 예제</h1>");
+ document.write("<h2>구구단 표</h2>");
+ document.write("<table border='2' width='50%'>");
+ 
+ for(var j=1; j<=9; j++){
+	 document.write("<tr>");
+	  document.write("<th>"+j+"</th>");
+	  
+	  for(var i=2; i<=9; i++){
+		  document.write("<th>"+(i*j)+"</th>");
+	  }
+	 document.write("</tr>");
+ }//outer for
+ document.write("</table><hr>");
+ 
+ /* 문제)while반복문을 사용하여 2단부터 9단까지 구구단 제목을 만들고, 이중 for반복문을 사용해서 구구단
+ 	내용을 표테이플로 출력해보자.
+ */
+ document.write("<table border='2' width='50%'>");
+ document.write("<tr>");
+ var k=2;
+ while(k<=9){
+	 document.write("<th>"+ k +"단</th>");
+	 k++;
+ }
+ document.write("</tr>")
+ 
+ var i,j;
+ for(j=1;j<=9;j++){
+	 document.write("<tr>");
+	 for(i=2;i<=9;i++){
+		 document.write("<th>"+i+"*"+j+"="+(i*j)+"</th>");
+	 }
+	 document.write("</tr>");
+ }
+ document.write("</table>");
+ 
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+</head>
+<body>
+<script>
+ var x,y,input;
+ 
+ input = window.prompt("정수 숫자만 입력>>","정수 숫자로"); //prompt()내장함수는 메시지를 가지고 입력
+ //박스가 있는 창을 띄운다. 확인을 클릭하면 입력필드에 입력한 값이 반환되고,취소를 클릭하면 null을 반환
+ alert(input);
+ if(input != null){
+	 x=parseInt(input); //parseInt()내장함수는 문자열을 정수 숫자로 변경한다.
+ }
+ 
+ input=promt("정수 숫자만 입력>>","정수 숫자로");
+ alert(input);
+ if(input != null){
+	 y=parseInt(input);
+ }
+ document.write(x+" + "+y+" = "+(x+y)+"<hr>");
+</script>
+</body>
+</html>

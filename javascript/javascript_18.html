@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<script>
+ document.write("<h2>do~while반복문 실습</h2>");
+ var i=1;
+ do{
+	 document.write("카운터 : " + i +"<br>");
+	 i++;
+ }while(i<=9);
+ document.write("<hr>");
+ 
+ var myCar = {make:"BMW",model:"X5",year:2023};
+ var result = "";
+ 
+ for(var a in myCar){//for ~ in 루프 반복문 => myCar객체의 속성을 가져와서 a변수에 대입
+	 alert(a);
+	 result += myCar[a]+" ";
+ }
+ document.write(result+"<hr>");
+</script>
+</head>
+<body>
+</body>
+</html>
