@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<script>
+ /* 문제) max함수를 정의해서 인자값 두 수중에서 더 큰수를 구하는 프로그램 자바스크립트 프로그램을 완성하자.*/
+ function max(a,b){
+	 if(a > b){
+		 return a;
+	 }else if(a == b){
+		 return b;
+	 }else{
+		 return b;
+	 }
+ }
+</script>
+</head>
+<body>
+ <h2>window객체 하위의 prompt() 메서드(내장함수) 실습</h2>
+ <script>
+  var a = window.prompt("정수 숫자값만 입력",'');//window.은 생략가능
+  var b = prompt("두번째 정수 숫자만 입력",'');//prompt()는 입력필드와 메시지를 가진 창을 만들고 확인을
+  //클릭하면 입력필드값을 반환하고,취소를 클릭하면 null을 반환
+  
+  var result = max(a,b);
+  document.write(a+"와"+b+" 중에서 더 큰수는? "+result+"<hr>");
+ </script>
+</body>
+</html>

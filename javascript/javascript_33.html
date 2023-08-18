@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<script>
+ var newsStr,n,i; //전역변수
+ 
+ function scro(){
+	 newsStr="뉴스 속보를 알려드리겠습니다. 내일 주말부터는 폭염이 발생할 것이라고 합니다. 더운 날씨에 건강 "
+	 +"유의 하세요!";
+	 i=0;
+	 n=newsStr.length;//뉴스 문자 길이
+	 scro2();
+ }
+ 
+ function scro2(){
+	 document.myform.news.value = newsStr.substring(0,i); //0이상 i미만 사이의 문자 반환.
+	 //document.은 생략 가능
+	 ++i;
+	 
+	 if(i>n) i=0; //처음부터 다시 반복
+	 setTimeout("scro2()",100);//주어진 시간 간격마다 매번 scro()함수를 호출해서 증가값을 반영
+ }
+</script>
+</head>
+<body onLoad="scro();"><!-- onLoad이벤트는 웹페이지 시작과 동시에 발생하는 이벤트 핸들러(사건처리기) -->
+ <form name="myform">
+  <input type="text" name="news" size="100" >
+ </form>
+</body>
+</html>

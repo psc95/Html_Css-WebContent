@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<script>
+ var msg="";
+ 
+ function test(){
+	 try{
+		 allert("javascript try~catch문 실습");//alert()내장함수 오타 오류
+	 }catch(error){
+		 msg = "다음과 같은 오류가 발생하였음:"+error.message;
+		 alert(msg);
+	 }
+ }
+</script>
+</head>
+<body>
+ <h2>자바스크립트의 try~catch문으로 예외처리</h2>
+ <form>
+  <input type="button" value="try~catch 실습" onclick="test();" >
+ </form>
+</body>
+</html>

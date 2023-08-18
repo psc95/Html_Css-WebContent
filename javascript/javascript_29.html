@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+</head>
+<body>
+ <script>
+  document.write("<h2>사용자 정의 객체를 만드는 실습</h2>");
+  
+  function Car(model,speed,color){
+	  this.model=model; //왼쪽의 model은 Car객체의 속성이고,오른쪽 model은 매개변수
+	  this.speed=speed;
+	  this.color=color;
+	  
+	  this.brake = function(){
+		  this.speed -= 10; //차 속도 10 감소
+	  }//brake() 메서드 정의
+	  
+	  this.accel = function(){
+		  this.speed += 10; //차 속도 10 증가
+	  }//accel() 메서드 정의
+  }//생성자 함수 정의
+  
+  var myCar = new Car("아우디",100,"red");
+  document.write("차모델:"+myCar.model+"차속도="+myCar.speed+"차 색상:"+myCar.color+"<hr>");
+  myCar.accel();
+  document.write("증가된 차속도="+myCar.speed+"<hr>");
+  myCar.brake(); myCar.brake();
+  document.write("감소된 차속도="+myCar.speed+"<hr>");
+ </script>
+</body>
+</html>
