@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<script>
+ function open_win(){
+	 window.open("event.html","이벤트 창","width=350px,height=420px,scrollbars=yes");
+	 /* window객체 하위의 open()메서드로 새로운 공지창을 만든다. open(공지창경로,공지창이름,공지창 속성).
+	  폭이 350픽셀,높이가 420픽셀이고,스크롤바가 생성되는 새로운 공지창을 만든다.
+	 */
+ }
+</script>
+</head>
+<body onLoad="open_win();">
+<!-- onLoad이벤트는 웹페이지 시작과 동시에 발생 -->
+ <h1>공지창 띄우기</h1>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<script>
+ function onButtonDown(btn){
+	 btn.style.color='yellow';
+ }
+ 
+ function onButtonUp(btn){
+	 btn.style.color='red';
+ }
+</script>
+</head>
+<body>
+ <button onmousedown="onButtonDown(this);" onmouseup="onButtonUp(this);">클릭하세요
+ </button>
+ <!-- mousedown이벤트는 마우스를 아래로 눌렀을 때 발생, mouseup 이벤트는 마우스를 떼었을 때 발생,
+ this는 button를 가리킴, btn도 button을 가리킴. -->
+</body>
+</html>

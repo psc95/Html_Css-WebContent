@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<script>
+ function checkNumber(message){
+	 var exp = /^[0-9]+$/;//정규표현식 ^는 시작,$끝,+는 한번이상 반복,[0.9]는 0부터 9까지 숫자중의
+	 //하나를 한번이상 반곡
+	 
+	 if(document.getElementById('phone').value.match(exp)){//폰입력한 것을 정규표현식 검사해서
+		 //숫자만 입력했다면 참
+		 alert('폰번호는 숫자만 입력했습니다!');
+	 }else{
+		 alert(message);
+		 document.getElementById('phone').value='';//폰번호 입력필드 초기화
+		 document.getElementById("phone").focus();//폰번호 입력필드로 포커스 이동
+	 }
+ }
+</script>
+</head>
+<body>
+ <h2>정규 표현식 유효성 검증(Validate)</h2>
+ <form method="post" action="#">
+  휴대전화번호(-없이 입력):<input type="tel" id="phone" size="20">
+   <input type="button" value="확인" onclick="checkNumber('폰번호는 숫자만 입력하세요!');">
+ </form>
+</body>
+</html>

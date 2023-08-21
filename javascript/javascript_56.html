@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<script>
+ function view(form){
+	 var i=form.san.selectedIndex;//selectedIndex속성은 선택된 항목번호를 반환. 첫번째 목록이 0
+	 alert("선택된 항목 번호값: "+i);
+	 alert(form.san.options[i].value)
+ }
+</script>
+</head>
+<body>
+ <h3>좋아하는 산을 선택:</h3>
+ <form>
+  <select name="san">
+   <option value="한라산">한라산</option>
+   <option value="설악산">설악산</option>
+   <option value="내장산" selected>내장산</option>
+   <option value="지리산">지리산</option>
+  </select>
+  <hr>
+  <input type="button" value="확인" onclick="view(this.form);" >
+ </form>
+</body>
+</html>
