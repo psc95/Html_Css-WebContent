@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+	$("#methodChain").click(function(){
+		$('#dog').show().fadeOut('slow').slideDown('slow');
+		//메서드 체이닝이란 여러개의 jQuery함수를 여러줄이 아닌 한줄로 엮어서 동시에 여러 기능을
+		//실행되게 하는법=>한줄로 나열해서 해당 요소를 보이게 했다가 사리지게 하고, 밀어 내린다.
+	}); 
+ });
+</script>
+</head>
+<body>
+ <input type="button" id="methodChain" value="메서드 체이닝">
+ <hr>
+ <img id="dog" src="../images/dog.jpeg" width="200" height="170"
+ style="display: none;">
+</body>
+</html>

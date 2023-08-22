@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>첫번째 jQuery 파일</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- CDN(Content Delivery Network의 약어)은 원격으로 인터넷이 연결된 상태에서 jQuery(자바스크립트
+ 프레임워크) 라이브러리를 사용하는 것을 말한다. -->
+<script type="text/javascript">
+ $(document).ready(function(){//문서가 준비되었다면 jQuery함수를 사용하겠다는 의미
+	//$는 jQuery란 의미. Q는 영문대문자이다. 
+	jQuery("h2").click(function(){//jQuery대신 $를 사용해도된다. h2태그 요소에 클릭 이벤트가 발생하면
+		//실행된다.
+		$(this).hide();//this는 현재 요소 즉 h2태그를 가리킴.jQuery hide()함수는 선택된 요소를 숨김
+		
+	});
+ });
+</script>
+</head>
+<body>
+ <h2>여기를 클릭하면 사라집니다.</h2>
+</body>
+</html>
